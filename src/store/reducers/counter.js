@@ -1,4 +1,4 @@
-import * as actionTypes from '../actions';
+import * as actionTypes from '../actions/actions';
 const initialState = {
     counter: 0,
     results: []
@@ -24,7 +24,7 @@ const reducer = (state = initialState, action) => {
     if (action.type === actionTypes.SUBSTRACT) {
         return { ...state, counter: state.counter - action.val };
     }
-    
+
     return state;
 };
 
